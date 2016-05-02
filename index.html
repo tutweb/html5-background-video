@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Background Video Dengan HTML5 dan JQuery</title>
+	<title>Background Video Dengan HTML5 dan JQuery | Jurnalweb.com</title>
 	<link rel="stylesheet" href="style.css">
 
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
@@ -23,33 +23,33 @@
 	<button>Pause</button>
 </div>
 
-	<script type="text/javascript">
-		var vid = document.getElementById("bgvid");
-		var pauseButton = document.querySelector("#citylife button");
+<script type="text/javascript">
+	var vid = document.getElementById("bgvid");
+	var pauseButton = document.querySelector("#citylife button");
 
-		function vidFade() {
-		  vid.classList.add("stopfade");
-		}
+	function vidFade() {
+	  vid.classList.add("stopfade");
+	}
 
-		vid.addEventListener('ended', function()
-		{
-		// only functional if "loop" is removed 
-		vid.pause();
-		// to capture IE10
-		vidFade();
-		}); 
+	vid.addEventListener('ended', function()
+	{
+	// only functional if "loop" is removed 
+	vid.pause();
+	// to capture IE10
+	vidFade();
+	}); 
 
 
-		pauseButton.addEventListener("click", function() {
-		  vid.classList.toggle("stopfade");
-		  if (vid.paused) {
-		    vid.play();
-		    pauseButton.innerHTML = "Pause";
-		  } else {
-		    vid.pause();
-		    pauseButton.innerHTML = "Paused";
-		  }
-		})
-	</script>
+	pauseButton.addEventListener("click", function() {
+	  vid.classList.toggle("stopfade");
+	  if (vid.paused) {
+	    vid.play();
+	    pauseButton.innerHTML = "Pause";
+	  } else {
+	    vid.pause();
+	    pauseButton.innerHTML = "Paused";
+	  }
+	})
+</script>
 </body>
 </html>
